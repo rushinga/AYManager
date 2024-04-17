@@ -121,6 +121,7 @@ public List<AYmember> retrieveallusers(){
      return null;
 }
 
+
 public Integer updateUser(AYmember member){
         try{
             Connection con = DriverManager.getConnection(jdcbUrl, dbUsername, dbPasswd);
@@ -174,6 +175,55 @@ public int deleteUser(AYmember member) {
     }
     return 0; 
 }
+
+public AYmember findMemberByUsernameAndClub(String username, String club) {
+    try {
+        Connection con = DriverManager.getConnection(jdcbUrl, dbUsername, dbPasswd);
+        String sql = "SELECT * FROM AYmember WHERE ayusername = ? AND ayclub = ?";
+        PreparedStatement prst = con.prepareStatement(sql);
+        prst.setString(1, username);
+        prst.setString(2, club);
+        ResultSet rs = prst.executeQuery();
+        if (rs.next()) {
+            AYmember foundMember = new AYmember();
+            foundMember.setUserName(rs.getString("ayusername"));
+            foundMember.setPhonenumber(rs.getString("ayphonenumber"));
+            foundMember.setRole(rs.getString("ayrole"));
+            foundMember.setClub(rs.getString("ayclub"));
+            foundMember.setPassword(rs.getString("aypassword"));
+            return foundMember;
+        }
+    } catch (Exception ex) {
+        ex.printStackTrace();
+    }
+    return null;
+}
+
+public List<AYmember> retrieveAllRegularUsers() {
+    try {
+        Connection conn = DriverManager.getConnection(jdcbUrl, dbUsername, dbPasswd);
+        String sql = "SELECT ayusername, ayphonenumber, ayrole, ayclub, aypassword FROM AYmember WHERE ayrole = ?";
+        PreparedStatement pst = conn.prepareStatement(sql);
+        pst.setString(1, "Regular User"); 
+        ResultSet rs = pst.executeQuery();
+        List<AYmember> aymemberlist = new ArrayList<>();
+        while (rs.next()) {
+            AYmember member = new AYmember();
+            member.setUserName(rs.getString("ayusername"));
+            member.setPhonenumber(rs.getString("ayphonenumber"));
+            member.setRole(rs.getString("ayrole"));
+            member.setClub(rs.getString("ayclub"));
+            member.setPassword(rs.getString("aypassword"));
+            aymemberlist.add(member);
+        }
+        conn.close();
+        return aymemberlist;
+    } catch (Exception ex) {
+        ex.printStackTrace();
+    }
+    return null;
+}
+
 
 
 

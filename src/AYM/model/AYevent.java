@@ -10,7 +10,7 @@ package AYM.model;
  * @author USER1
  */
 public class AYevent {
-    private String evemtName;
+    private String eventName;
     private int eventId;
     private String eventdate;
     private String eventlocation;
@@ -20,19 +20,19 @@ public class AYevent {
     }
 
     public AYevent(String evemtName, int eventId, String eventdate, String eventlocation, String eventorganiser) {
-        this.evemtName = evemtName;
+        this.eventName = evemtName;
         this.eventId = eventId;
         this.eventdate = eventdate;
         this.eventlocation = eventlocation;
         this.eventorganiser = eventorganiser;
     }
 
-    public String getEvemtName() {
-        return evemtName;
+    public String getEventName() {
+        return eventName;
     }
 
-    public void setEvemtName(String evemtName) {
-        this.evemtName = evemtName;
+    public void setEventName(String eventName) {
+        this.eventName = eventName;
     }
 
     public int getEventId() {

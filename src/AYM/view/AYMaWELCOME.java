@@ -30,50 +30,25 @@ public class AYMaWELCOME extends javax.swing.JFrame {
     private void initComponents() {
 
         welcomepanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         continuebtn = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         welcomepanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 42)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel1.setText("ADVENTIST YOUTH ");
-        welcomepanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 50, -1, -1));
-
-        jLabel2.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 42)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel2.setText("MANAGEMENT");
-        welcomepanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 150, -1, -1));
-
-        jLabel3.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 42)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel3.setText("SYSTEM");
-        welcomepanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 210, 70));
-
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 18)); // NOI18N
         jLabel4.setText("Developed by");
-        welcomepanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 520, -1, -1));
+        welcomepanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 730, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 18)); // NOI18N
         jLabel5.setText("ASHIMWE Rushinga Cedrick");
-        welcomepanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 550, -1, -1));
+        welcomepanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 750, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 40)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 204, 204));
-        jLabel7.setText("(AY,JA)");
-        welcomepanel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 100, -1, -1));
-
-        continuebtn.setBackground(new java.awt.Color(204, 255, 255));
+        continuebtn.setBackground(new java.awt.Color(255, 255, 51));
         continuebtn.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         continuebtn.setText("Press to continue");
         continuebtn.addActionListener(new java.awt.event.ActionListener() {
@@ -81,32 +56,21 @@ public class AYMaWELCOME extends javax.swing.JFrame {
                 continuebtnActionPerformed(evt);
             }
         });
-        welcomepanel.add(continuebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 380, -1, -1));
+        welcomepanel.add(continuebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 550, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Viner Hand ITC", 1, 43)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 204, 255));
-        jLabel6.setText("2 Corinthians 5:14");
-        welcomepanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, -1, -1));
-
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AYM/view/image/welcome.png"))); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AYM/view/image/backgroundhome.png"))); // NOI18N
         background.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
-        welcomepanel.add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, -10, 1040, 620));
+        welcomepanel.add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1340, 800));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(welcomepanel, javax.swing.GroupLayout.PREFERRED_SIZE, 1089, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addComponent(welcomepanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(welcomepanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(welcomepanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -157,13 +121,8 @@ public class AYMaWELCOME extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel background;
     private javax.swing.JButton continuebtn;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel welcomepanel;
     // End of variables declaration//GEN-END:variables
 }

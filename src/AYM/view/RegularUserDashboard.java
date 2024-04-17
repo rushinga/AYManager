@@ -9,13 +9,15 @@ package AYM.view;
  *
  * @author USER1
  */
-public class RegularUserDashboard extends javax.swing.JFrame {
 
-    /**
-     * Creates new form StudentDashboard
-     */
+public class RegularUserDashboard extends javax.swing.JFrame {
+ 
+    
+    
+     
     public RegularUserDashboard() {
         initComponents();
+       
     }
 
     /**
@@ -28,24 +30,16 @@ public class RegularUserDashboard extends javax.swing.JFrame {
     private void initComponents() {
 
         Parentpanel = new javax.swing.JPanel();
-        menupanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        myprofilebtn = new javax.swing.JButton();
-        eventbtn = new javax.swing.JButton();
-        clubbtn = new javax.swing.JButton();
-        materialsbtn = new javax.swing.JButton();
-        homebtn = new javax.swing.JButton();
-        alltabsstudent = new javax.swing.JTabbedPane();
-        profilepanel = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        eventpanel = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        clubpanel = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        materialpanel = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        homebtn = new javax.swing.JButton();
+        myprofilebtn = new javax.swing.JButton();
+        eventbtn = new javax.swing.JButton();
+        materialsbtn = new javax.swing.JButton();
+        logoutbtn = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -53,239 +47,132 @@ public class RegularUserDashboard extends javax.swing.JFrame {
         Parentpanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Parentpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        menupanel.setBackground(new java.awt.Color(255, 204, 51));
-        menupanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel2.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel2.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("ADVENTIST YOUTH ");
+        Parentpanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, -1, 40));
 
-        jLabel1.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 30)); // NOI18N
-        jLabel1.setText("Menu");
+        jLabel3.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 204, 51));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("MANAGEMENT SYSTEM");
+        Parentpanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 90, -1, -1));
 
-        myprofilebtn.setBackground(new java.awt.Color(51, 51, 51));
-        myprofilebtn.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 22)); // NOI18N
-        myprofilebtn.setForeground(new java.awt.Color(0, 153, 255));
-        myprofilebtn.setText("My profile");
-        myprofilebtn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                myprofilebtnMouseClicked(evt);
-            }
-        });
-
-        eventbtn.setBackground(new java.awt.Color(51, 51, 51));
-        eventbtn.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 24)); // NOI18N
-        eventbtn.setForeground(new java.awt.Color(0, 153, 255));
-        eventbtn.setText("Events ");
-        eventbtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                eventbtnActionPerformed(evt);
-            }
-        });
-
-        clubbtn.setBackground(new java.awt.Color(51, 51, 51));
-        clubbtn.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 24)); // NOI18N
-        clubbtn.setForeground(new java.awt.Color(0, 153, 255));
-        clubbtn.setText("Club");
-        clubbtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                clubbtnActionPerformed(evt);
-            }
-        });
-
-        materialsbtn.setBackground(new java.awt.Color(51, 51, 51));
-        materialsbtn.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 24)); // NOI18N
-        materialsbtn.setForeground(new java.awt.Color(0, 153, 255));
-        materialsbtn.setText("AY Materials");
-        materialsbtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialsbtnActionPerformed(evt);
-            }
-        });
-
-        homebtn.setBackground(new java.awt.Color(51, 51, 51));
+        homebtn.setBackground(new java.awt.Color(153, 153, 153));
         homebtn.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 24)); // NOI18N
         homebtn.setForeground(new java.awt.Color(51, 255, 51));
+        homebtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AYM/view/image/Customer Registration & Check IN.png"))); // NOI18N
         homebtn.setText("HOME");
         homebtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 homebtnActionPerformed(evt);
             }
         });
+        Parentpanel.add(homebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 40, -1, -1));
 
-        javax.swing.GroupLayout menupanelLayout = new javax.swing.GroupLayout(menupanel);
-        menupanel.setLayout(menupanelLayout);
-        menupanelLayout.setHorizontalGroup(
-            menupanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menupanelLayout.createSequentialGroup()
-                .addGroup(menupanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(menupanelLayout.createSequentialGroup()
-                        .addGap(69, 69, 69)
-                        .addComponent(jLabel1))
-                    .addGroup(menupanelLayout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addGroup(menupanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(myprofilebtn, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
-                            .addComponent(clubbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(menupanelLayout.createSequentialGroup()
-                        .addGap(52, 52, 52)
-                        .addComponent(eventbtn))
-                    .addGroup(menupanelLayout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addGroup(menupanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(materialsbtn)
-                            .addGroup(menupanelLayout.createSequentialGroup()
-                                .addGap(28, 28, 28)
-                                .addComponent(homebtn)))))
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-        menupanelLayout.setVerticalGroup(
-            menupanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menupanelLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel1)
-                .addGap(27, 27, 27)
-                .addComponent(myprofilebtn, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(eventbtn)
-                .addGap(18, 18, 18)
-                .addComponent(clubbtn)
-                .addGap(18, 18, 18)
-                .addComponent(materialsbtn)
-                .addGap(26, 26, 26)
-                .addComponent(homebtn)
-                .addContainerGap(197, Short.MAX_VALUE))
-        );
+        myprofilebtn.setBackground(new java.awt.Color(153, 153, 153));
+        myprofilebtn.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 24)); // NOI18N
+        myprofilebtn.setForeground(new java.awt.Color(0, 153, 255));
+        myprofilebtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AYM/view/image/pngwing.com (1).png"))); // NOI18N
+        myprofilebtn.setText("My profile");
+        myprofilebtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                myprofilebtnMouseClicked(evt);
+            }
+        });
+        myprofilebtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                myprofilebtnActionPerformed(evt);
+            }
+        });
+        Parentpanel.add(myprofilebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 200, 60));
 
-        Parentpanel.add(menupanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 99, 230, 580));
+        eventbtn.setBackground(new java.awt.Color(153, 153, 153));
+        eventbtn.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 24)); // NOI18N
+        eventbtn.setForeground(new java.awt.Color(0, 153, 255));
+        eventbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AYM/view/image/pngwing.com (2).png"))); // NOI18N
+        eventbtn.setText("Events ");
+        eventbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eventbtnActionPerformed(evt);
+            }
+        });
+        Parentpanel.add(eventbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 170, 60));
 
-        profilepanel.setBackground(new java.awt.Color(255, 204, 51));
+        materialsbtn.setBackground(new java.awt.Color(153, 153, 153));
+        materialsbtn.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 24)); // NOI18N
+        materialsbtn.setForeground(new java.awt.Color(0, 153, 255));
+        materialsbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AYM/view/image/pngwing.com (4).png"))); // NOI18N
+        materialsbtn.setText("AY Materials");
+        materialsbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialsbtnActionPerformed(evt);
+            }
+        });
+        Parentpanel.add(materialsbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 230, 60));
 
-        jLabel8.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 51, 255));
-        jLabel8.setText("PROFILE INFORMATION");
+        logoutbtn.setBackground(new java.awt.Color(153, 153, 153));
+        logoutbtn.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 24)); // NOI18N
+        logoutbtn.setForeground(new java.awt.Color(51, 255, 102));
+        logoutbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AYM/view/image/logout.png"))); // NOI18N
+        logoutbtn.setText("Log Out");
+        logoutbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logoutbtnActionPerformed(evt);
+            }
+        });
+        Parentpanel.add(logoutbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 500, 190, 60));
 
-        javax.swing.GroupLayout profilepanelLayout = new javax.swing.GroupLayout(profilepanel);
-        profilepanel.setLayout(profilepanelLayout);
-        profilepanelLayout.setHorizontalGroup(
-            profilepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(profilepanelLayout.createSequentialGroup()
-                .addGap(209, 209, 209)
-                .addComponent(jLabel8)
-                .addContainerGap(233, Short.MAX_VALUE))
-        );
-        profilepanelLayout.setVerticalGroup(
-            profilepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(profilepanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel8)
-                .addContainerGap(492, Short.MAX_VALUE))
-        );
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel14.setText("Designed by");
+        Parentpanel.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 750, -1, -1));
 
-        alltabsstudent.addTab("My profile", null, profilepanel, "");
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel15.setText("Ashimwe R Cedrick");
+        Parentpanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 770, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 51, 255));
-        jLabel7.setText("EVENT INFORMATION");
+        jLabel1.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 30)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel1.setText("Menu");
+        Parentpanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, -1, -1));
 
-        javax.swing.GroupLayout eventpanelLayout = new javax.swing.GroupLayout(eventpanel);
-        eventpanel.setLayout(eventpanelLayout);
-        eventpanelLayout.setHorizontalGroup(
-            eventpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(eventpanelLayout.createSequentialGroup()
-                .addGap(230, 230, 230)
-                .addComponent(jLabel7)
-                .addContainerGap(231, Short.MAX_VALUE))
-        );
-        eventpanelLayout.setVerticalGroup(
-            eventpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(eventpanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel7)
-                .addContainerGap(492, Short.MAX_VALUE))
-        );
-
-        alltabsstudent.addTab("Event", eventpanel);
-
-        jLabel6.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 51, 255));
-        jLabel6.setText("CLUB INFORMATION");
-
-        javax.swing.GroupLayout clubpanelLayout = new javax.swing.GroupLayout(clubpanel);
-        clubpanel.setLayout(clubpanelLayout);
-        clubpanelLayout.setHorizontalGroup(
-            clubpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(clubpanelLayout.createSequentialGroup()
-                .addGap(228, 228, 228)
-                .addComponent(jLabel6)
-                .addContainerGap(249, Short.MAX_VALUE))
-        );
-        clubpanelLayout.setVerticalGroup(
-            clubpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(clubpanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel6)
-                .addContainerGap(492, Short.MAX_VALUE))
-        );
-
-        alltabsstudent.addTab("Club", clubpanel);
-
-        materialpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel5.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 51, 255));
-        jLabel5.setText("AY Materials Tab");
-        materialpanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(248, 16, -1, -1));
-
-        alltabsstudent.addTab("Ay materials", materialpanel);
-
-        Parentpanel.add(alltabsstudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 107, 720, 570));
-
-        jLabel2.setBackground(new java.awt.Color(250, 250, 250));
-        jLabel2.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 204, 0));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("ADVENTIST YOUTH ");
-        Parentpanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, -1, 40));
-
-        jLabel3.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 204, 51));
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("MANAGEMENT SYSTEM");
-        Parentpanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, -1, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AYM/view/image/allbackground.png"))); // NOI18N
-        Parentpanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 700));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AYM/view/image/backgroundfnaloriginal.png"))); // NOI18N
+        Parentpanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1350, 810));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Parentpanel, javax.swing.GroupLayout.PREFERRED_SIZE, 1002, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(57, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Parentpanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Parentpanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(Parentpanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void clubbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clubbtnActionPerformed
-       alltabsstudent.setSelectedIndex(2);
-    }//GEN-LAST:event_clubbtnActionPerformed
-
+    
     private void materialsbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialsbtnActionPerformed
-        alltabsstudent.setSelectedIndex(3);
+      materialpage mtp = new materialpage();
+      mtp.setVisible(true);
     }//GEN-LAST:event_materialsbtnActionPerformed
 
     private void myprofilebtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_myprofilebtnMouseClicked
-        alltabsstudent.setSelectedIndex(0);
+      //  alltabsstudent.setSelectedIndex(0);
     }//GEN-LAST:event_myprofilebtnMouseClicked
 
     private void eventbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eventbtnActionPerformed
-        alltabsstudent.setSelectedIndex(1);
+  
+          eventspage evp = new eventspage();
+        evp.setVisible(true);
     }//GEN-LAST:event_eventbtnActionPerformed
 
     private void homebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homebtnActionPerformed
@@ -293,6 +180,17 @@ public class RegularUserDashboard extends javax.swing.JFrame {
         welcome.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_homebtnActionPerformed
+
+    private void logoutbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutbtnActionPerformed
+       AYMLOGIN login = new AYMLOGIN();
+       login.setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_logoutbtnActionPerformed
+
+    private void myprofilebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myprofilebtnActionPerformed
+        myprofilepage myp = new myprofilepage();
+        myp.setVisible(true);
+    }//GEN-LAST:event_myprofilebtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -321,6 +219,12 @@ public class RegularUserDashboard extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -332,24 +236,16 @@ public class RegularUserDashboard extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Parentpanel;
-    private javax.swing.JTabbedPane alltabsstudent;
-    private javax.swing.JButton clubbtn;
-    private javax.swing.JPanel clubpanel;
     private javax.swing.JButton eventbtn;
-    private javax.swing.JPanel eventpanel;
     private javax.swing.JButton homebtn;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel materialpanel;
+    private javax.swing.JButton logoutbtn;
     private javax.swing.JButton materialsbtn;
-    private javax.swing.JPanel menupanel;
     private javax.swing.JButton myprofilebtn;
-    private javax.swing.JPanel profilepanel;
     // End of variables declaration//GEN-END:variables
 }

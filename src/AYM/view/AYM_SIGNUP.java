@@ -53,42 +53,43 @@ public class AYM_SIGNUP extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         signuppanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        signuppanel.setMinimumSize(new java.awt.Dimension(1390, 850));
         signuppanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 40)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 204, 0));
         jLabel1.setText("SIGN UP");
-        signuppanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 60, 250, -1));
+        signuppanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 250, -1));
 
         jLabel2.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 28)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 51));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("UserName:");
-        signuppanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, 200, -1));
+        signuppanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 220, 200, -1));
 
         jLabel3.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 28)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 51));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel3.setText("Phone Number:");
-        signuppanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, 230, -1));
+        signuppanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 270, 230, -1));
 
         jLabel4.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 28)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 102));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Role:");
-        signuppanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 220, 200, -1));
+        signuppanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 310, 200, -1));
 
         jLabel5.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 28)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 51));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel5.setText("Password:");
-        signuppanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, 200, -1));
+        signuppanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, 200, -1));
 
         jLabel6.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 28)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 51));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel6.setText("Confirm Password:");
-        signuppanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 350, 250, -1));
+        signuppanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 450, 250, -1));
 
         signupbtn.setBackground(new java.awt.Color(255, 255, 102));
         signupbtn.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 28)); // NOI18N
@@ -98,17 +99,17 @@ public class AYM_SIGNUP extends javax.swing.JFrame {
                 signupbtnActionPerformed(evt);
             }
         });
-        signuppanel.add(signupbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 430, -1, -1));
-        signuppanel.add(confirmpasswordfield, new org.netbeans.lib.awtextra.AbsoluteConstraints(671, 350, 200, 40));
-        signuppanel.add(passwordfield, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 310, 200, 30));
+        signuppanel.add(signupbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 540, -1, -1));
+        signuppanel.add(confirmpasswordfield, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 450, 200, 40));
+        signuppanel.add(passwordfield, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 400, 200, 30));
 
         usernamefield.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        signuppanel.add(usernamefield, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 130, 200, 40));
+        signuppanel.add(usernamefield, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 220, 200, 40));
 
         jLabel7.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 22)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(51, 153, 255));
         jLabel7.setText("Already have an account?");
-        signuppanel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 520, -1, -1));
+        signuppanel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 630, -1, -1));
 
         loginbtn.setBackground(new java.awt.Color(255, 255, 255));
         loginbtn.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 22)); // NOI18N
@@ -118,28 +119,33 @@ public class AYM_SIGNUP extends javax.swing.JFrame {
                 loginbtnActionPerformed(evt);
             }
         });
-        signuppanel.add(loginbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 520, -1, 40));
+        signuppanel.add(loginbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 620, -1, 40));
 
         rolecombo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        rolecombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ADMIN", "Club Leader", "Regular User" }));
+        rolecombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ADMIN" }));
         rolecombo.setSelectedIndex(-1);
-        signuppanel.add(rolecombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 220, 200, -1));
-        signuppanel.add(phonefield, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 180, 200, 30));
+        rolecombo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rolecomboActionPerformed(evt);
+            }
+        });
+        signuppanel.add(rolecombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 310, 200, -1));
+        signuppanel.add(phonefield, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 270, 200, 30));
 
         jLabel8.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 28)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 51));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel8.setText("Club:");
-        signuppanel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 260, 70, 40));
+        signuppanel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 350, 70, 40));
 
         clubcombo.setFont(new java.awt.Font("Microsoft PhagsPa", 1, 18)); // NOI18N
         clubcombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Master Guide", "Senior Youth", "Ambassodor", "Pathfinder", "Adventure" }));
         clubcombo.setSelectedIndex(-1);
-        signuppanel.add(clubcombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 268, 200, 30));
+        signuppanel.add(clubcombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 360, 200, 30));
 
         backgroundlabel.setBackground(new java.awt.Color(255, 255, 153));
-        backgroundlabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AYM/view/image/signup wall paper.png"))); // NOI18N
-        signuppanel.add(backgroundlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 590));
+        backgroundlabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AYM/view/image/loginfinal1.png"))); // NOI18N
+        signuppanel.add(backgroundlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1390, 820));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -147,15 +153,14 @@ public class AYM_SIGNUP extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(signuppanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(signuppanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(signuppanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(signuppanel, javax.swing.GroupLayout.PREFERRED_SIZE, 812, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
 
         pack();
@@ -173,7 +178,9 @@ public class AYM_SIGNUP extends javax.swing.JFrame {
         // making all field required
         if(usernamefield.getText().trim().isEmpty()){
             JOptionPane.showMessageDialog(this,"Please enter username");
-        }else if(phonefield.getText().trim().isEmpty()){
+        }else if (usernamefield.getText().length()<5) {
+                JOptionPane.showMessageDialog(this, "Please Username must be 5 characters");
+            }else if(phonefield.getText().trim().isEmpty()){
         JOptionPane.showMessageDialog(this,"Please enter Phone number");
         }else if (phonefield.getText().trim().length() != 10) {
         JOptionPane.showMessageDialog(this, "Phone number must be 10 digits long");
@@ -229,6 +236,10 @@ public class AYM_SIGNUP extends javax.swing.JFrame {
     
         
     }//GEN-LAST:event_signupbtnActionPerformed
+
+    private void rolecomboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rolecomboActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rolecomboActionPerformed
 
     /**
      * @param args the command line arguments

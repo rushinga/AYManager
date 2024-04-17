@@ -53,40 +53,44 @@ public class AYMRecovery extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 40)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 204, 0));
         jLabel1.setText("CHANGE PASSWORD");
-        recoverypanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, -1, -1));
+        recoverypanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 100, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 28)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 51));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("UserName:");
-        recoverypanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 170, 210, 50));
+        recoverypanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 200, 210, 50));
 
         jLabel3.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 28)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 51));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel3.setText("New Password:");
-        recoverypanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 220, 240, 50));
+        recoverypanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 260, 240, 50));
 
         jLabel4.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 28)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 51));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Confirm Password:");
-        recoverypanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 270, -1, 53));
-        recoverypanel.add(newpasswordfield, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 270, 200, 40));
+        recoverypanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, -1, 53));
 
+        newpasswordfield.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        recoverypanel.add(newpasswordfield, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 320, 200, 40));
+
+        confirmpasswordfield.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         confirmpasswordfield.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 confirmpasswordfieldActionPerformed(evt);
             }
         });
-        recoverypanel.add(confirmpasswordfield, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 220, 200, 40));
+        recoverypanel.add(confirmpasswordfield, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 260, 200, 40));
 
+        usernamefield.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         usernamefield.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernamefieldActionPerformed(evt);
             }
         });
-        recoverypanel.add(usernamefield, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 170, 200, 40));
+        recoverypanel.add(usernamefield, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 200, 200, 40));
 
         submitbtn.setBackground(new java.awt.Color(255, 255, 51));
         submitbtn.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 28)); // NOI18N
@@ -96,7 +100,7 @@ public class AYMRecovery extends javax.swing.JFrame {
                 submitbtnActionPerformed(evt);
             }
         });
-        recoverypanel.add(submitbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 350, -1, -1));
+        recoverypanel.add(submitbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, -1, -1));
 
         loginbtn.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 20)); // NOI18N
         loginbtn.setText("LOG IN");
@@ -105,19 +109,19 @@ public class AYMRecovery extends javax.swing.JFrame {
                 loginbtnActionPerformed(evt);
             }
         });
-        recoverypanel.add(loginbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 440, 110, -1));
+        recoverypanel.add(loginbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 500, 110, -1));
 
         jLabel5.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 22)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 102, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel5.setText("Already have an account?");
-        recoverypanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 440, -1, 40));
+        recoverypanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 500, -1, 40));
 
         jLabel6.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 22)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 102, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel6.setText("Don't have an account?");
-        recoverypanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(504, 493, 260, 30));
+        recoverypanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 570, 260, 30));
 
         signupbtn.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 20)); // NOI18N
         signupbtn.setText("SIGN UP");
@@ -126,10 +130,10 @@ public class AYMRecovery extends javax.swing.JFrame {
                 signupbtnActionPerformed(evt);
             }
         });
-        recoverypanel.add(signupbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 490, -1, -1));
+        recoverypanel.add(signupbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 570, -1, -1));
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AYM/view/image/recovery wallpaper.png"))); // NOI18N
-        recoverypanel.add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 1030, 620));
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AYM/view/image/loginfinal1.png"))); // NOI18N
+        recoverypanel.add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 1340, 790));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
